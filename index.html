@@ -4,201 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prajakta Athalye | Market Research Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #6e7f8e, #405059);
-      color: white;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
+      color: #1f2937;
       overflow-x: hidden;
     }
     header {
       text-align: center;
-      padding: 100px 20px 50px 20px;
-      background: rgba(0, 0, 0, 0.7);
-      border-bottom: 2px solid #ffffff;
+      padding: 60px 20px;
+      background-color: #1f2937;
+      color: white;
     }
     header img {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-bottom: 20px;
-      border: 5px solid #fff;
+      object-fit: cover;
+      border: 4px solid white;
     }
-    header h1 {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 20px;
-      font-weight: 300;
-      margin-bottom: 20px;
-    }
-    header a {
-      background-color: #f1c40f;
-      color: #2d3436;
-      padding: 10px 25px;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-    header a:hover {
-      background-color: #d4ac0d;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
     }
     h2 {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 30px;
-      border-bottom: 3px solid #f1c40f;
-      display: inline-block;
-      padding-bottom: 10px;
-      text-transform: uppercase;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    a.btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #f1c40f;
-      color: #2d3436;
-      font-weight: 600;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-    a.btn:hover {
-      background-color: #d4ac0d;
-    }
-
-    .certificates ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      justify-content: center;
-      padding: 0;
-    }
-    .certificates ul li {
-      background: #2d3436;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    .certificates a {
-      color: #f1c40f;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .certificates a:hover {
-      text-decoration: underline;
-    }
-
-    .social-links {
+      font-size: 1.75rem;
       margin-top: 40px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 8px;
     }
-    .social-links a {
-      color: #f1c40f;
-      margin: 0 15px;
-      font-size: 24px;
+    p, ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn {
+      display: inline-block;
+      margin: 20px 10px 0 0;
+      padding: 10px 20px;
+      background: #2563eb;
+      color: white;
+      border-radius: 6px;
       text-decoration: none;
     }
-    .social-links a:hover {
-      color: #d4ac0d;
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
     }
-
+    .cert-card {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
     footer {
-      background: #2d3436;
-      padding: 30px 20px;
       text-align: center;
-      color: white;
+      padding: 20px;
+      background: #e5e7eb;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #1f2937;
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="Prajakta Athalye blazer photo .jpg" alt="Prajakta Athalye">
     <h1>Prajakta Athalye</h1>
     <p>Market Research Analyst | Turning Data into Actionable Insights</p>
-    <a href="https://github.com/prajaktathalye/prajaktathalye.github.io" target="_blank">Explore My Work</a>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>I'm a business analytics graduate with a passion for transforming data into actionable insights that drive business growth. I specialize in market research, consumer behavior analysis, and strategic decision-making.</p>
+    <p>Hi! I'm Prajakta, a business analytics graduate with hands-on experience in qualitative and quantitative market research, data analysis, and consumer insights. Passionate about uncovering trends and helping brands make smarter decisions.</p>
   </section>
 
   <section>
     <h2>Skills</h2>
     <ul>
-      <li>Market Research: Qualitative & Quantitative</li>
+      <li>Market Research (Qual & Quant)</li>
       <li>Data Analysis: Excel, SPSS, SQL</li>
-      <li>Visualization Tools: Power BI, Tableau</li>
-      <li>Consumer Insights & Behavioral Analysis</li>
-      <li>Report Writing & Business Presentations</li>
+      <li>Visualization: Power BI, Tableau</li>
+      <li>Survey Design, Desk Research</li>
+      <li>Report Writing & Presentation</li>
     </ul>
   </section>
 
   <section>
     <h2>Experience</h2>
-    <p><strong>Market Research Intern - Hansa Research Group</strong></p>
+    <p><strong>Market Research Intern – Hansa Research Group</strong><br>Oct 2024 – Apr 2025</p>
     <ul>
-      <li>Led market research projects and data collection efforts.</li>
-      <li>Conducted in-depth consumer interviews and focus group studies.</li>
-      <li>Developed consumer insights reports and provided strategic recommendations.</li>
-    </ul>
-  </section>
-
-  <section class="certificates">
-    <h2>Certifications</h2>
-    <ul>
-      <li><a href="cert_AI.pdf.pdf" target="_blank">AI Certification</a></li>
-      <li><a href="cert_AWS.pdf.pdf" target="_blank">AWS Certification</a></li>
-      <li><a href="cert_CSA.pdf.pdf" target="_blank">CSA Certification</a></li>
-      <li><a href="cert_PWC.pdf.pdf" target="_blank">PWC FORAGE Certification</a></li>
-      <li><a href="cert_accenture.pdf.pdf" target="_blank">Accenture FORAGE Certification</a></li>
-      <li><a href="cert_be10x.pdf.pdf" target="_blank">BE10X Certification</a></li>
-      <li><a href="cert_intro_to_python.pdf.pdf" target="_blank">Intro to Python Certification</a></li>
-      <li><a href="cert_powerbi.pdf.pdf" target="_blank">Power BI Certification</a></li>
+      <li>Led qualitative studies including CLTs, dyads, and home visits</li>
+      <li>Cleaned and analyzed large datasets in Excel, improving data quality by 15%</li>
+      <li>Conducted secondary research for appliance & tech clients</li>
     </ul>
   </section>
 
   <section>
-    <h2>My Video Introduction</h2>
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    <h2>Video Introduction</h2>
+    <p>Here's a short video about who I am and what I do:</p>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Intro Video" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2>Resume</h2>
+    <a class="btn" href="https://github.com/prajaktathalye/prajaktathalye.github.io/blob/main/Prajakta_Athalye_Resume.pdf">Download Resume</a>
+  </section>
+
+  <section>
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+      <div class="cert-card"><a href="cert_AI.pdf.pdf" target="_blank">AI Certification</a></div>
+      <div class="cert-card"><a href="cert_AWS.pdf.pdf" target="_blank">AWS Certification</a></div>
+      <div class="cert-card"><a href="cert_CSA.pdf.pdf" target="_blank">CSA Certification</a></div>
+      <div class="cert-card"><a href="cert_PWC.pdf.pdf" target="_blank">PWC FORAGE Certification</a></div>
+      <div class="cert-card"><a href="cert_accenture.pdf.pdf" target="_blank">Accenture FORAGE Certification</a></div>
+      <div class="cert-card"><a href="cert_be10x.pdf.pdf" target="_blank">BE10X Certification</a></div>
+      <div class="cert-card"><a href="cert_intro_to_python.pdf.pdf" target="_blank">Intro to Python</a></div>
+      <div class="cert-card"><a href="cert_powerbi.pdf.pdf" target="_blank">Power BI Certification</a></div>
     </div>
   </section>
 
-  <section class="social-links">
-    <h2>Connect with Me</h2>
-    <a href="https://www.linkedin.com/in/prajaktaathalye" target="_blank">LinkedIn</a>
-    <a href="https://github.com/prajaktathalye" target="_blank">GitHub</a>
-    <a href="https://twitter.com/prajaktaathalye" target="_blank">Twitter</a>
+  <section>
+    <h2>Blog & Resources</h2>
+    <ul>
+      <li><a href="#">Top 5 Trends in Market Research (2025)</a></li>
+      <li><a href="#">How to Clean Data for Surveys</a></li>
+      <li><a href="#">Download: Market Research Report Template</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <p><em>"Prajakta was instrumental in providing us deep insights into our customer base. Her research helped us make smarter product decisions."</em> – Former Manager</p>
+    <p><em>"She has an eye for detail and a strong grasp on both qualitative and quantitative research."</em> – Academic Mentor</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>📧 prajaktaa599@gmail.com</p>
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/prajaktaathalye" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/prajaktathalye" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/YOUR_USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Prajakta Athalye. All rights reserved.</p>
+    © 2025 Prajakta Athalye. All rights reserved.
   </footer>
-
 </body>
 </html>
