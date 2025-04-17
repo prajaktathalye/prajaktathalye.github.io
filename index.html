@@ -2,253 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prajakta Athalye | Market Research Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* Reset and general layout */
-    * {
+    body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background: linear-gradient(135deg, #6e7f8e, #405059);
+      color: white;
+      overflow-x: hidden;
     }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: #f0f4f8;
-      color: #333;
-    }
-
-    /* Hero Section with video background */
-    .hero {
-      height: 100vh;
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg') no-repeat center center/cover;
-    }
-
-    .hero video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.3;
-    }
-
-    .hero-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    header {
       text-align: center;
-      color: #fff;
-      z-index: 1;
+      padding: 100px 20px 50px 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-bottom: 2px solid #ffffff;
     }
-
-    .hero h1 {
-      font-size: 4rem;
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 5px solid #fff;
+    }
+    header h1 {
+      font-size: 36px;
       font-weight: 700;
-      margin-bottom: 20px;
       letter-spacing: 2px;
+      margin-bottom: 10px;
     }
-
-    .hero p {
-      font-size: 1.5rem;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      padding: 15px 30px;
-      background-color: #2563eb;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      font-weight: 500;
-      transition: 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #1e40af;
-    }
-
-    /* Content Sections */
-    section {
-      margin: 60px 20px;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    h2 {
-      font-size: 2.5rem;
+    header p {
+      font-size: 20px;
+      font-weight: 300;
       margin-bottom: 20px;
-      color: #333;
+    }
+    header a {
+      background-color: #f1c40f;
+      color: #2d3436;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    header a:hover {
+      background-color: #d4ac0d;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
       text-align: center;
-      font-family: 'Ubuntu', sans-serif;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #f1c40f;
+      display: inline-block;
+      padding-bottom: 10px;
+      text-transform: uppercase;
     }
 
-    /* Skills and About Section */
-    .skills ul {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      list-style: none;
-      margin-bottom: 40px;
+    ul {
+      list-style-type: none;
+      padding: 0;
     }
-
-    .skills li {
-      background-color: #fff;
-      padding: 20px;
+    ul li {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    a.btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #f1c40f;
+      color: #2d3436;
+      font-weight: 600;
+      text-decoration: none;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
+    }
+    a.btn:hover {
+      background-color: #d4ac0d;
     }
 
-    .skills li:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Certificates Section */
     .certificates ul {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
-    }
-
-    .certificates a {
-      display: block;
-      background: #2563eb;
-      color: white;
-      padding: 20px;
-      text-decoration: none;
-      text-align: center;
-      border-radius: 10px;
-      transition: background 0.3s ease;
-    }
-
-    .certificates a:hover {
-      background: #1e40af;
-    }
-
-    /* Social Media and Contact */
-    .social-icons {
-      display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
+      padding: 0;
+    }
+    .certificates ul li {
+      background: #2d3436;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .certificates a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .certificates a:hover {
+      text-decoration: underline;
     }
 
-    .social-icons a {
+    .social-links {
+      margin-top: 40px;
+    }
+    .social-links a {
+      color: #f1c40f;
+      margin: 0 15px;
       font-size: 24px;
-      color: #333;
-      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #d4ac0d;
     }
 
-    .social-icons a:hover {
-      color: #2563eb;
-    }
-
-    /* Footer */
     footer {
-      background: #1f2937;
-      color: #fff;
+      background: #2d3436;
       padding: 30px 20px;
       text-align: center;
+      color: white;
     }
-
-    footer a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #fff;
-    }
-
-    /* Animation for fade-in effect */
-    .fade-in-section {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-
-    .fade-in-section.visible {
-      opacity: 1;
-      transform: none;
-    }
-
   </style>
-  <script>
-    // Scroll animation logic
-    document.addEventListener("DOMContentLoaded", function () {
-      const sections = document.querySelectorAll(".fade-in-section");
-
-      const inView = (el) => {
-        const rect = el.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom >= 0;
-      };
-
-      const onScroll = () => {
-        sections.forEach((section) => {
-          if (inView(section)) {
-            section.classList.add("visible");
-          }
-        });
-      };
-
-      window.addEventListener("scroll", onScroll);
-      onScroll(); // Trigger scroll event for initial load
-    });
-  </script>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <video autoplay muted loop>
-      <source src="your-video.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-      <h1>Market Research Analyst</h1>
-      <p>Turning Data Into Insights For Business Growth</p>
-      <a href="#work" class="btn">Explore My Work</a>
-    </div>
-  </div>
+  <header>
+    <img src="Prajakta Athalye blazer photo .jpg" alt="Prajakta Athalye">
+    <h1>Prajakta Athalye</h1>
+    <p>Market Research Analyst | Turning Data into Actionable Insights</p>
+    <a href="https://github.com/prajaktathalye/prajaktathalye.github.io" target="_blank">Explore My Work</a>
+  </header>
 
-  <!-- About Me Section -->
-  <section class="fade-in-section">
+  <section>
     <h2>About Me</h2>
-    <p>I'm Prajakta, a passionate market research analyst focused on providing actionable insights to drive business success. I specialize in both qualitative and quantitative research methods, ensuring the strategies I recommend are data-driven and robust.</p>
+    <p>I'm a business analytics graduate with a passion for transforming data into actionable insights that drive business growth. I specialize in market research, consumer behavior analysis, and strategic decision-making.</p>
   </section>
 
-  <!-- Skills Section -->
-  <section class="skills fade-in-section">
-    <h2>Skills & Tools</h2>
+  <section>
+    <h2>Skills</h2>
     <ul>
-      <li>Market Research (Qualitative & Quantitative)</li>
-      <li>Data Analysis: SPSS, SQL, Python</li>
-      <li>Visualization: Power BI, Tableau</li>
-      <li>Consumer Segmentation</li>
-      <li>Survey Design & Analysis</li>
+      <li>Market Research: Qualitative & Quantitative</li>
+      <li>Data Analysis: Excel, SPSS, SQL</li>
+      <li>Visualization Tools: Power BI, Tableau</li>
+      <li>Consumer Insights & Behavioral Analysis</li>
+      <li>Report Writing & Business Presentations</li>
     </ul>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="work" class="fade-in-section">
-    <h2>Portfolio of Work</h2>
-    <p>Browse my research projects and see how I transform data into strategic insights.</p>
-    <a href="projects.html" class="btn">View Projects</a>
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Market Research Intern - Hansa Research Group</strong></p>
+    <ul>
+      <li>Led market research projects and data collection efforts.</li>
+      <li>Conducted in-depth consumer interviews and focus group studies.</li>
+      <li>Developed consumer insights reports and provided strategic recommendations.</li>
+    </ul>
   </section>
 
-  <!-- Certificates Section -->
-  <section class="certificates fade-in-section">
-    <h2>My Certifications</h2>
+  <section class="certificates">
+    <h2>Certifications</h2>
     <ul>
       <li><a href="cert_AI.pdf.pdf" target="_blank">AI Certification</a></li>
       <li><a href="cert_AWS.pdf.pdf" target="_blank">AWS Certification</a></li>
@@ -261,20 +182,22 @@
     </ul>
   </section>
 
-  <!-- Social Media & Contact -->
-  <section class="fade-in-section">
-    <h2>Connect with Me</h2>
-    <p>Email: prajaktaa599@gmail.com</p>
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/prajaktaathalye" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/prajaktathalye" target="_blank">🐱 GitHub</a>
+  <section>
+    <h2>My Video Introduction</h2>
+    <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- Footer -->
+  <section class="social-links">
+    <h2>Connect with Me</h2>
+    <a href="https://www.linkedin.com/in/prajaktaathalye" target="_blank">LinkedIn</a>
+    <a href="https://github.com/prajaktathalye" target="_blank">GitHub</a>
+    <a href="https://twitter.com/prajaktaathalye" target="_blank">Twitter</a>
+  </section>
+
   <footer>
     <p>© 2025 Prajakta Athalye. All rights reserved.</p>
-    <p><a href="privacy-policy.html">Privacy Policy</a></p>
   </footer>
 
 </body>
